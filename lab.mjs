@@ -84,6 +84,7 @@ given data:
 // Then use the result to calculate the average age.
 
 // solutions
+//2.1
 let giveArrayObj = [
   { id: "42", name: "Bruce", occupation: "Knight", age: "41" },
   { id: "48", name: "Barry", occupation: "Runner", age: "25" },
@@ -91,18 +92,17 @@ let giveArrayObj = [
   { id: "63", name: "Blaine", occupation: "Quiz Master", age: "58" },
   { id: "7", name: "Bilbo", occupation: "None", age: "111" },
 ];
+// console.log(giveArrayObj)
+giveArrayObj.sort((a, b) => {
+  return a.age - b.age;
+});
+console.log(giveArrayObj); //updated object
+//2.2
+giveArrayObj.filter((item) => item.age > 50);
 console.log(giveArrayObj);
-console.log(giveArrayObj[0].age);
-// 2.1 sort with age
-// to sort ,and use the method sort ,we need one call back function ,which do the comparision among values,its value greater that 10 ,or basicly sort byitself work only for 1 digit number
-// function comparNumber(a, b) {
-//   return a > b ? a : b;
-// }
-
-giveArrayObj.sort((a, b) => b.age - a.age);
-console.log("sorted arrObj :" + giveArrayObj);
 
 console.log("**********__part--3___*********");
+
 console.log("**********__part--4___*********");
 console.log("**********__part--5___*********");
 console.log("**********__part--6___*********");
